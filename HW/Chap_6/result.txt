@@ -1,0 +1,9 @@
+Total time for 1000000 gettimeofday() calls: 12599 microseconds
+Average time per call: 12.599 nanoseconds
+
+Total time for 1000000 read() calls: 174973 microseconds
+Average time per call: 174.973 nanoseconds
+
+Measuring context switch cost with 1000000 iterations...
+Total time for 2000000 context switches: 2305424 microseconds
+Average time per context switch: 1152.712 nanoseconds
