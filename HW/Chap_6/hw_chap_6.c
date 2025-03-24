@@ -159,10 +159,8 @@ void measure_context_switch() {
     close(pipe1[1]);
     close(pipe2[0]);
 
-    // 等待子進程結束
     waitpid(pid, NULL, 0);
 
-    // 計算時間
     elapsed_time = (end.tv_sec - start.tv_sec) * 1000000LL + (end.tv_usec - start.tv_usec);
     printf("Total time for %d context switches: %lld microseconds\n", iterations * 2, elapsed_time);
     printf("Average time per context switch: %.3f nanoseconds\n", (double)elapsed_time * 1000 / (iterations * 2));
