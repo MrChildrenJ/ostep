@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "__locale": "c",
+        "queue": "c",
+        "stack": "c"
+    }
+}
